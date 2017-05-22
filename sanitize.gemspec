@@ -5,9 +5,9 @@ Gem::Specification.new do |s|
   s.name     = 'sanitize'
   s.summary  = 'Whitelist-based HTML and CSS sanitizer.'
   s.version  = Sanitize::VERSION
-  s.authors  = ['Ryan Grove']
-  s.email    = 'ryan@wonko.com'
-  s.homepage = 'https://github.com/rgrove/sanitize/'
+  s.authors  = ['Ryan Grove', 'Martin Hromadko']
+  s.email    = 'hromadkom@gmail.com'
+  s.homepage = 'https://github.com/hromadkom/sanitize/'
   s.licenses = ['MIT']
 
   s.description = 'Sanitize is a whitelist-based HTML and CSS sanitizer. Given a list of acceptable elements, attributes, and CSS properties, Sanitize will remove all unacceptable HTML and/or CSS from a string.'
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   # Runtime dependencies.
   s.add_dependency('crass',     '~> 1.0.2')
   s.add_dependency('nokogiri',  '>= 1.4.4')
-  s.add_dependency('nokogumbo', '~> 1.4.1')
+  # s.add_dependency('nokogumbo', '~> 1.4.1')
 
   # Development dependencies.
   s.add_development_dependency('minitest',  '~> 5.6.0')
