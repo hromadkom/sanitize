@@ -107,7 +107,7 @@ class Sanitize
   def document(html)
     return '' unless html
 
-    doc = Nokogiri::HTML5.parse(preprocess(html))
+    doc = Nokogiri::HTML.parse(preprocess(html))
     node!(doc)
     to_html(doc)
   end
@@ -120,7 +120,7 @@ class Sanitize
     return '' unless html
 
     html = preprocess(html)
-    doc  = Nokogiri::HTML5.parse("<html><body>#{html}")
+    doc  = Nokogiri::HTML.parse("<html><body>#{html}")
 
     # Hack to allow fragments containing <body>. Borrowed from
     # Nokogiri::HTML::DocumentFragment.
